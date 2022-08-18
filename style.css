@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Courgette', cursive;    
+}
+
+.container-utama{
+   display: flex;
+    justify-content: center;
+    background-image: url('img/bg.jpg');
+}
+
+.sub-container-utama{
+    padding: 2vh;
+    width: 60%;
+    transform: translate(0px , -70px);
+    opacity: 0;
+    transition: 1.7s;
+}
+
+.sub-container-utama.subCtnUtm{
+    transform: translate(0px , 0px);
+    opacity: 1;
+}
+.logo h4{
+    padding-top: 4%;
+    padding-left: 4%;   
+}
+.logo{
+    flex-grow: 2;
+}
+.nav-bar{
+    display: flex;
+    background-color: #0096FF;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 0px black;
+}
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+    justify-content: space-evenly;
+}
+.nav-bar ul li {
+    padding-left: 15px;
+}
+
+.search img{
+  width: 10px;
+}
+
+.tambahBuku{
+    background-color: #00D7FF;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 1px 2px 0px black;
+}
+
+.tambahBuku article form{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 50%;
+    justify-content: center;
+}
+.tambahBuku article{
+    background-color: #daf9ff;
+    padding: 10px;
+    width:100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 0px black;
+}
+.tambahBuku h4{
+    padding: 5px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+.cari-buku{
+    background-color: #00D7FF;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0.5px solid black;
+}
+
+.unread{
+    background-color: #00D7FF;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 0px black;
+    flex-grow: 1;
+   text-align: center;
+   margin: 5px;
+}
+.read{
+    background-color: #00D7FF;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 0px black;
+    flex-grow: 1;
+    text-align: center;
+    margin: 5px;
+}
+
+.daftar-baca{
+    display: flex;
+}
+
+.sub-unread,.sub-read{
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #daf9ff;
+    border: 1px solid black;
+    box-shadow: 1px 2px 0px black;
+}
+
+.sub-unread div:hover{
+    transform: scale(1.02);
+}
+
+.sub-read div:hover{
+    transform: scale(1.02);
+}
+
+.jumbotron{
+    background-color: #daf9ff;
+   height: 35%;
+    margin: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 2px 0px black;
+    display: flex;
+    justify-content: space-around;
+}
+
+.jumbotron div.box{
+    width: 100%;
+    margin: 10px;
+    background-color: rgb(0, 215, 255, 0.2);
+    background-image: url("img/1.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.button {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button input{
+    width: 100%;
+}
+
+.container{
+    background-color: #0096FF;
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    background-color: rgb(0, 150, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+}
+
+.inner h2{
+    text-shadow: 1px 1px 0px #00D7FF;
+}
+
+.inner p{
+    text-shadow: 1px 1px 0px #00D7FF;
+}
+
+.shadow {
+    border: 1px solid black;
+    box-shadow: 1px 1px 0px black;
+    width: 100%;
+    height: 100%;
+}
+
+.inner {
+    padding: 5px;
+    text-align: center;
+}
+
+.check-button{
+    width:25%;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   padding-top: 1px;
+}
+
+button.check-button:hover{
+   background-color: rgb(29, 241, 188,0.5);
+}
+
+.check-button img{
+    width: 20px;
+}
+
+.trash-button{
+    width:25%;
+    height: 25px;
+    margin-left: 2px;
+    padding-top: 1px;
+}
+
+.trash-button:hover{
+    background-color: rgb(29, 241, 188,0.5);
+}
+
+.trash-button img{
+    width: 20px;
+}
+
+.undo-button{
+    width: 25%;
+    height: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top: 1px;
+}
+
+.undo-button:hover{
+    background-color: rgb(29, 241, 188,0.5);
+}
+
+.undo-button img{
+    width: 20px;   
+}
+
+.status{
+    background-color: rgb(218, 249, 255, 0.2);
+    padding: 5px;
+    text-align: center;
+}
+
+.status h3{
+    text-shadow: 1px 1px 0.5px #00D7FF;
+}
+
+.stat-button{   
+    background-color: rgb(255, 0, 0, 0.7);
+    width: 100%;
+    height: 20px;
+    border: 1px solid rgb(255, 0, 0, 0.8);
+}
+
+.stat-button:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.holo{
+    box-shadow: 2px 2px 3px #00D7FF;
+    border:1px solid #daf9ff;    
+}
+
+.btn-holo{
+    background-color: rgb(0, 150, 255, 0.6);
+    border : 1px solid #daf9ff;
+    margin-left: 7%;
+   
+}
+
+.btn-holo:hover{
+    transform: scale(1.1);
+}
+
+.hide{
+    display: none;
+}
+
+#pencarian div{
+    transform: scale(0);
+    opacity: 1;
+    transition: 1s;
+}
+
+#pencarian div.zoom{
+    transform: scale(1);
+    opacity: 1;
+    transition: 1s;
+}
+
+#subUnread div, #subRead div{
+    opacity: 0;
+    transition: .5s;
+}
+
+#subUnread div.muncul, #subRead div.muncul{
+    opacity: 1;
+    transition: .5s;
+}
+
+input{
+    background-color: rgb(255, 255, 240);
+}
+
+@media screen and (max-width: 768px){
+    
+    .jumbotron div.box{
+        background-position: center; 
+    }
+
+    .sub-container-utama{
+        width:75%;
+    }
+
+    .logo h4{
+       padding-top: 11%;
+       font-size: 14.5px;
+    }
+
+}
+
+@media screen and (max-width: 576px)  {
+    body{
+        font-size: 15px;
+    }
+    .sub-container-utama{
+      width:95%;
+        
+    }
+    .nav-bar{
+      display: flex;
+    }
+    .logo h4{
+      font-size: 15px;
+    }
+    .logo{
+        width: 50%;
+       
+    }
+    .cari-buku input#Cari{
+        width: 80%;
+    }
+    .cari-buku label{
+        font-size: 11px;
+    }
+    .cari-buku{
+       width:50%; 
+    }
+    .sub-unread .inner h2{
+        font-size: 12.5px;
+    }
+    .sub-unread .inner p{
+        font-size: 10px;
+    }
+    .sub-read .inner h2{
+        font-size: 12.5px;
+    }
+    .sub-read .inner p{
+        font-size: 10px;
+    }
+
+}
+
